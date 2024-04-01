@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 10:12:23 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDY7IjEwOjExOjMzICI7Mjc5NQ=="/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDY7IjEwOjEyOjAyICI7MTtnaW92YW5uYS5sdXo7TlQzNDsyMDI0LTAzLTA2OyIwODo0NDoxMiAiO0Rlc2FmaW8wMjUuZnByZzs3MDQ1"/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDY7IjEwOjEyOjIzICI7MTsyOTAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numA, numB, numC" type="Integer" array="False" size=""/>
+            <input variable="numA"/>
+            <input variable="numB"/>
+            <input variable="numC"/>
+            <if expression="(numA+numB)&gt;numC">
+                <then>
+                    <output expression="&quot;&#233; possivel formar um triangulo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;n&#227;o &#233; possivel formar um triangulo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

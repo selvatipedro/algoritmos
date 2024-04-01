@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 08:41:49 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDY7IjA4OjQwOjAyICI7MjgwMA=="/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDY7IjA4OjQxOjQ5ICI7MTsyOTIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="horas, minutA, minutM" type="Integer" array="False" size=""/>
+            <input variable="horas"/>
+            <input variable="minutA"/>
+            <assign variable="minutM" expression="(horas*60)+minutA"/>
+            <output expression="minutM" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-24 11:05:19 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtERVNLVE9QLU0zVUlBRFY7MjAyNC0wMS0yNDsiMTA6NTE6MjQgIjszNjE1"/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtERVNLVE9QLU0zVUlBRFY7MjAyNC0wMS0yNDsiMTE6MDU6MTkgIjsxOzM3Mjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C, DELTA" type="Real" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <assign variable="delta" expression="b^2-4*a*c"/>
+            <output expression="delta" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

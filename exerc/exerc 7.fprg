@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-07 07:45:20 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDItMDc7IjA3OjM5OjQ0ICI7MjgxMw=="/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDItMDc7IjA3OjQ1OjIwICI7MTsyOTEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ano, ano1, quociente, resto, resultado" type="Integer" array="False" size=""/>
+            <input variable="ano"/>
+            <assign variable="ano1" expression="(ano%100)"/>
+            <assign variable="quociente" expression="(ano1/4)"/>
+            <assign variable="resto" expression="(ano1%7)"/>
+            <assign variable="resultado" expression="(quociente+resto)%7"/>
+            <if expression="ano&gt;2000">
+                <then>
+                    <assign variable="resultado" expression="resultado-1"/>
+                    <if expression="resultado&lt;0">
+                        <then>
+                            <assign variable="resultado" expression="resultado+7"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else/>
+            </if>
+            <output expression="resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

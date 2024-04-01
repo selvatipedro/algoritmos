@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 02:40:05 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDQ7IjEwOjA5OjI3ICI7MjgwMw=="/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDQ7IjAyOjQwOjA1ICI7MjsyOTA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b, ai, p, ar, d" type="Integer" array="False" size=""/>
+            <input variable="b"/>
+            <input variable="al"/>
+            <assign variable="p" expression="(b*2)+(al*2)"/>
+            <assign variable="ar" expression="b*al"/>
+            <assign variable="d" expression="((b^2)+(al^2))^0.5"/>
+            <output expression="&quot;_o perimetro do ret&#227;ngulo &#233;&quot;&amp;&quot;&quot;&amp; p" newline="True"/>
+            <output expression="&quot;_a area do retangulo &#233; &quot;&amp;&quot;&quot;&amp; ar" newline="True"/>
+            <output expression="&quot;_a medida da diagonal do retangulo &#233; &quot;&amp;&quot;&quot;&amp; d" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

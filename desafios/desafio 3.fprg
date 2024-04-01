@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 03:04:16 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDQ7IjAyOjU3OjM3ICI7MjgwOA=="/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDQ7IjAzOjA0OjE2ICI7MTsyOTA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angulo, seno, coss, tang" type="Real" array="False" size=""/>
+            <input variable="angulo"/>
+            <assign variable="seno" expression="sin(angulo)"/>
+            <output expression="seno" newline="True"/>
+            <assign variable="coss" expression="cos(angulo)"/>
+            <output expression="coss" newline="True"/>
+            <assign variable="tang" expression="tang(angulo)"/>
+            <output expression="tang" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

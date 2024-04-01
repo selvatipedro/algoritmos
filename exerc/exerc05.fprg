@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-05 08:34:03 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtERVNLVE9QLU0zVUlBRFY7MjAyNC0wMi0wNTsiMDc6NTk6NDUgIjszNjMy"/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtERVNLVE9QLU0zVUlBRFY7MjAyNC0wMi0wNTsiMDg6MzQ6MDMgIjsxOzM3Mjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ano" type="Integer" array="False" size=""/>
+            <declare name="mensagem" type="String" array="False" size=""/>
+            <input variable="ano"/>
+            <declare name="lbissexto" type="Boolean" array="False" size=""/>
+            <assign variable="lbissexto" expression="ehbissexto (ano)"/>
+            <if expression="lbissexto">
+                <then>
+                    <assign variable="mensagem" expression="ano &amp; &quot; &#233; bissexto&quot;"/>
+                </then>
+                <else>
+                    <assign variable="mensagem" expression="ano &amp; &quot; n&#227;o &#233; bissexto&quot;"/>
+                </else>
+            </if>
+            <output expression="mensagem" newline="True"/>
+        </body>
+    </function>
+    <function name="ehbissexto" type="Boolean" variable="resultado">
+        <parameters>
+            <parameter name="ano" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="resultado" type="Boolean" array="False" size=""/>
+            <assign variable="resultado" expression="(ano % 4 == 0 &amp;&amp; ano % 100 !=0) || ano % 400 == 0"/>
+        </body>
+    </function>
+</flowgorithm>

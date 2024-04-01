@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-05 10:26:21 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtERVNLVE9QLU0zVUlBRFY7MjAyNC0wMi0wNTsiMDg6NDg6MjYgIjszNjMw"/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtERVNLVE9QLU0zVUlBRFY7MjAyNC0wMi0wNTsiMTA6MjY6MjEgIjsxOzM3MjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="m&#233;dia, a, b, c, frequencia, presen&#231;a, aulas, faltas" type="Integer" array="False" size=""/>
+            <declare name="mensagem" type="String" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <input variable="faltas"/>
+            <assign variable="m&#233;dia" expression="a+b+c/3"/>
+            <assign variable="aulas" expression="100"/>
+            <output expression="m&#233;dia" newline="True"/>
+            <if expression="(m&#233;dia&gt;=7.0 &amp;&amp; faltas&lt; 0.25*aulas)">
+                <then>
+                    <assign variable="mensagem" expression="&quot;APROVADO&quot;"/>
+                    <output expression="mensagem" newline="True"/>
+                    <assign variable="" expression=""/>
+                </then>
+                <else>
+                    <assign variable="mensagem" expression="&quot;REPROVADO&quot;"/>
+                    <output expression="mensagem" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 10:11:28 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDY7IjEwOjA1OjE2ICI7Mjc5OQ=="/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDY7IjEwOjExOjA3ICI7MTtnaW92YW5uYS5sdXo7TlQzNDsyMDI0LTAzLTA2OyIwODoxMjoyOCAiO0Rlc2FmaW8wMjYuZnByZzs3MDUy"/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDY7IjEwOjExOjI4ICI7MTsyOTA3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numA, numB, numC" type="Integer" array="False" size=""/>
+            <input variable="numA"/>
+            <input variable="numB"/>
+            <input variable="numC"/>
+            <if expression="numA=numB">
+                <then>
+                    <if expression="numB=numC">
+                        <then>
+                            <output expression="&quot;esse triangulo e equilatero pois todas as suas medidas s&#227;o iguais&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;esse triangulo e isosceles pois duas das suas medidas s&#227;o iguais&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="numB=numC">
+                        <then/>
+                        <else>
+                            <output expression="&quot;esse triangulo e escaleno pois nenhuma das suas medidas s&#227;o iguais&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="(numA+numB)&gt;numC">
+                <then>
+                    <output expression="&quot;&#233; possivel formar um triangulo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;n&#227;o &#233; possivel formar um triangulo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

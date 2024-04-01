@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-24 10:49:31 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtERVNLVE9QLU0zVUlBRFY7MjAyNC0wMS0yNDsiMDk6NDI6MDMgIjszNjIw"/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtERVNLVE9QLU0zVUlBRFY7MjAyNC0wMS0yNDsiMTA6NDk6MzEgIjsxOzM3Mjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, soma" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="soma" expression="a+b+c"/>
+            <output expression="soma" newline="True"/>
+            <declare name="media" type="Integer" array="False" size=""/>
+            <assign variable="media" expression="soma / 3"/>
+            <output expression="media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

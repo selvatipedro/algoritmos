@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 02:44:55 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDQ7IjAyOjQxOjI2ICI7Mjc5OQ=="/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDQ7IjAyOjQ0OjU1ICI7MTsyOTEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r, p, a" type="Integer" array="False" size=""/>
+            <input variable="r"/>
+            <assign variable="p" expression="2*pi*r"/>
+            <assign variable="a" expression="pi*(r^2)"/>
+            <output expression="&quot;_o per&#237;metro do c&#237;culo &#233; &quot;&amp;&quot;&quot;&amp; p" newline="True"/>
+            <output expression="&quot;_a area do ciculo &#233; &quot;&amp;&quot;&quot;&amp; a" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>

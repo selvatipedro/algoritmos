@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 09:01:16 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDY7IjA4OjQ3OjEwICI7MjgwNg=="/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDY7IjA5OjAxOjE2ICI7MTsyOTEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="VA, i, P, n" type="Real" array="False" size=""/>
+            <input variable="P"/>
+            <input variable="i"/>
+            <input variable="n"/>
+            <assign variable="P" expression="100.00"/>
+            <assign variable="i" expression="0.01"/>
+            <assign variable="n" expression="12"/>
+            <assign variable="VA" expression="P*((1+i)^n-1)/i"/>
+            <assign variable="VA" expression="100*((1+0.01)^12-1)/0.01"/>
+            <assign variable="P" expression="100.00"/>
+            <assign variable="i" expression="0.01"/>
+            <assign variable="n" expression="12"/>
+            <assign variable="VA" expression="P*((1+i)^n-1)/i"/>
+            <assign variable="VA" expression="100*((1+0.01)^12-1)/0.01"/>
+            <output expression="P" newline="True"/>
+            <output expression="i" newline="True"/>
+            <output expression="n" newline="True"/>
+            <output expression="VA" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

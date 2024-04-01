@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-14 11:30:14 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDItMTQ7IjA3OjU2OjA0ICI7MjgwNg=="/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDItMTQ7IjExOjMwOjE0ICI7MTsyOTAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="diastrab" type="Integer" array="False" size=""/>
+            <declare name="salario, inss, ir, vt, vr, bcir, salliq, i" type="Real" array="False" size=""/>
+            <for variable="i" start="1" end="5" direction="inc" step="1">
+                <input variable="nome"/>
+                <input variable="salario"/>
+                <input variable="diastrab"/>
+            </for>
+            <input variable="nome"/>
+            <input variable="salario"/>
+            <input variable="diastrab"/>
+            <output expression="&quot;NOME = &quot;&amp;nome&amp;&quot;   &quot;" newline="False"/>
+            <output expression="&quot;SALARIO = &quot;&amp;salario&amp;&quot;   &quot;" newline="False"/>
+            <output expression="&quot;DIASTRAB = &quot;&amp;diastrab&amp;&quot;   &quot;" newline="False"/>
+            <assign variable="salario" expression="(salario/30)*diastrab"/>
+            <assign variable="vt" expression="vt(salario)"/>
+            <assign variable="vr" expression="vr(salario)"/>
+            <assign variable="inss" expression="inss(salario)"/>
+            <assign variable="bcir" expression="salario - inss"/>
+            <output expression="&quot;Vt = &quot;&amp;vt&amp;&quot;   &quot;" newline="False"/>
+            <output expression="&quot;VR = &quot;&amp;vr&amp;&quot;   &quot;" newline="False"/>
+            <assign variable="salliq" expression="salario-inss-ir-vt-vr"/>
+            <output expression="&quot;SALLIQ = &quot;&amp;salliq&amp;&quot;   &quot;" newline="False"/>
+        </body>
+    </function>
+    <function name="inss" type="Real" variable="inss">
+        <parameters>
+            <parameter name="salario" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="inss" type="Real" array="False" size=""/>
+            <if expression="salario&lt;= 1412">
+                <then>
+                    <assign variable="inss" expression="salario*0.075"/>
+                </then>
+                <else>
+                    <if expression="salario &lt;= 2666.68">
+                        <then>
+                            <assign variable="inss" expression="(salario * 0.09) - 21.18"/>
+                        </then>
+                        <else>
+                            <if expression="salario &lt;= 4000.03">
+                                <then>
+                                    <assign variable="inss" expression="(salario * 0.12) - 101.18"/>
+                                </then>
+                                <else>
+                                    <if expression="salario &lt;= 7786.02">
+                                        <then>
+                                            <assign variable="inss" expression="(salario * 0.14) - 181.18"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="inss" expression="908.86"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;INSS = &quot;&amp;inss&amp;&quot;   &quot;" newline="False"/>
+        </body>
+    </function>
+    <function name="ir" type="Real" variable="ir">
+        <parameters>
+            <parameter name="bcir" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="ir" type="Real" array="False" size=""/>
+            <if expression="bcir &lt;= 2112">
+                <then>
+                    <assign variable="ir" expression="0.00"/>
+                </then>
+                <else>
+                    <if expression="bcir &lt;= 2826.65">
+                        <then>
+                            <assign variable="ir" expression="(bcir * 0.075) - 158.40"/>
+                        </then>
+                        <else>
+                            <if expression="bcir &lt;= 3571.05">
+                                <then>
+                                    <assign variable="ir" expression="(bcir * 0.15) - 370.40"/>
+                                </then>
+                                <else>
+                                    <if expression="bcir &lt;= 4664.68">
+                                        <then>
+                                            <assign variable="ir" expression="(bcir * 0.225) - 651.73"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="ir" expression="(bcir * 0.275) - 884.96"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;IR = &quot;&amp;ir&amp;&quot;   &quot;" newline="False"/>
+        </body>
+    </function>
+    <function name="vr" type="Real" variable="vr">
+        <parameters>
+            <parameter name="salario" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="vr" type="Real" array="False" size=""/>
+            <assign variable="vr" expression="salario*0.01"/>
+        </body>
+    </function>
+    <function name="vt" type="Real" variable="vt">
+        <parameters>
+            <parameter name="salario" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="vt" type="Real" array="False" size=""/>
+            <assign variable="vt" expression="salario*0.06"/>
+        </body>
+    </function>
+</flowgorithm>

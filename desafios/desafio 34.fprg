@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 02:23:30 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDY7IjAyOjIzOjAyICI7Mjc5NQ=="/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDY7IjAyOjIzOjIxICI7MTtHYWJyaWVsLkxvcGVzO05UMzU7MjAyNC0wMy0wNjsiMTA6NTY6NDIgIjtkZXNhZmlvMDM0LmZwcmc7NzA5Mg=="/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDY7IjAyOjIzOjMwICI7MTsyOTA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, soma, i" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="soma" expression="0"/>
+            <for variable="i" start="1" end="b" direction="inc" step="1">
+                <assign variable="soma" expression="soma+a"/>
+            </for>
+            <output expression="soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

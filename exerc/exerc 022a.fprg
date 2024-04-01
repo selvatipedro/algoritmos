@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-31 01:33:37 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtERVNLVE9QLU0zVUlBRFY7MjAyNC0wMS0yNDsiMTA6NTE6MjQgIjszNjE1"/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtERVNLVE9QLU0zVUlBRFY7MjAyNC0wMS0zMTsiMDE6MzM6MzcgIjs0OzM3Mjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C, delta, x1, x2" type="Real" array="False" size=""/>
+            <declare name="mensagem" type="String" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <assign variable="delta" expression="b^2-4*a*c"/>
+            <output expression="delta" newline="True"/>
+            <if expression="delta &gt;= 0">
+                <then>
+                    <assign variable="x1" expression="(-b+delta^(1/2))/(2*a)"/>
+                    <assign variable="x2" expression="(-b-delta^(1/2))/(2*a)"/>
+                    <output expression="x1" newline="True"/>
+                    <output expression="x2" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="mensagem" expression="&quot;impossivel calcular no conjunto dos numeros reais&quot;"/>
+                    <output expression="mensagem" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="delta" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+            <parameter name="c" type="Integer" array="False"/>
+        </parameters>
+        <body/>
+    </function>
+    <function name="principal" type="None" variable="">
+        <parameters/>
+        <body>
+            <assign variable="delta" expression="delta(a,b,c)"/>
+            <if expression="delta &gt;= 0">
+                <then>
+                    <call expression="raiz(a,b,delta)"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

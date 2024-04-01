@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-19 01:24:15 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDItMTk7IjA5OjE1OjQzICI7MjgxMQ=="/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDItMTk7IjAxOjI0OjE1ICI7MTsyOTEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="arq" type="String" array="False" size=""/>
+            <assign variable="arq" expression="&quot;func.txt&quot;"/>
+            <open expression="arq" mode="read"/>
+            <while expression="!EOF()">
+                <read variable="arq"/>
+                <output expression="arq" newline="True"/>
+            </while>
+            <assign variable="arq" expression="&quot;func02.txt&quot;"/>
+            <open expression="arq" mode="write"/>
+        </body>
+    </function>
+</flowgorithm>

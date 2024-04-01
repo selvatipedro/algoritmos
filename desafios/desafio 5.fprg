@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 03:10:21 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDQ7IjAzOjA0OjE5ICI7MjgwMQ=="/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDQ7IjAzOjEwOjIxICI7MTsyODk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="KW" type="Integer" array="False" size=""/>
+            <declare name="salario" type="Real" array="False" size=""/>
+            <input variable="salario"/>
+            <assign variable="salario" expression="salario/7"/>
+            <assign variable="salario" expression="salario/100"/>
+            <output expression="salario" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

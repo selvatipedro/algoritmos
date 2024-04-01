@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 09:50:06 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDQ7IjA4OjM0OjM5ICI7MjgxMQ=="/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDQ7IjA5OjUwOjA2ICI7MTsyOTEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dd, mm, aaaa" type="Integer" array="False" size=""/>
+            <input variable="dd"/>
+            <input variable="mm"/>
+            <input variable="aaaa"/>
+            <output expression="dd &amp;&quot;/&quot;&amp;mm&amp;&quot;/&quot;&amp;aaaa" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

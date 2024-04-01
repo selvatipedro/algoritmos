@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 08:31:41 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDY7IjA4OjI4OjUxICI7MjgxMA=="/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDY7IjA4OjMxOjQxICI7MTsyOTEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cc, vc, dp, kpl" type="Real" array="False" size=""/>
+            <input variable="vc"/>
+            <input variable="dp"/>
+            <input variable="kpt"/>
+            <output expression="&quot;voce precisara dar R $&quot;&amp;cc&amp;&quot;&quot;&amp;&quot;de gasolina pro seu carro beber e te levar ao destino&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

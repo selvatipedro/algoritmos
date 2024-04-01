@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 08:45:30 "/>
+        <attribute name="created" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDY7IjA4OjQxOjU0ICI7MjgwOA=="/>
+        <attribute name="edited" value="cGVkcm8uc2VsdmF0aTtOVDQ4OzIwMjQtMDMtMDY7IjA4OjQ1OjMwICI7MTsyOTE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, QAD, DIF" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <assign variable="QAD" expression="(A-B)^2"/>
+            <assign variable="DIF" expression="(A+B)*(A-B)"/>
+            <output expression="&quot;O QUADRADO DA DIFEREN&#199;A &#201;:&quot;" newline="True"/>
+            <output expression="QAD" newline="True"/>
+            <output expression="&quot;A DIFEREN&#199;A DOS QUADRADOS &#201;:&quot;" newline="True"/>
+            <output expression="DIF" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
